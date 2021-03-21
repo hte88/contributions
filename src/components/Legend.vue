@@ -1,7 +1,7 @@
 <template>
   <div
-    v-for="background in color"
-    :key="background.index"
+    v-for="(background, index) in color"
+    :key="index"
     :style="{ 'background-color': background.color }"
     :title="background.min + ' >= ' + background.max"
     class="relative h-5 w-5 border m-0.5 z-0 cursor-pointer"
