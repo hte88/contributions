@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white mt-10 py-10 px-5 overflow-x-auto">
     <div class="flex">
-      <div class="graph">
+      <div class="inline-grid gap-2">
         <MonthsList :min-date="minDate" :diff-days="diffDays"></MonthsList>
         <WeekDay></WeekDay>
         <DaySquareList
@@ -15,7 +15,7 @@
       <div class="flex flex-wrap">
         <Legend :color="color"></Legend>
       </div>
-      <div class="">
+      <div>
         <button
           @click="visibleContribution = !visibleContribution"
           class="rounded bg-green-500 hover:bg-green-700 text-white px-4 py-2 focus:outline-none"

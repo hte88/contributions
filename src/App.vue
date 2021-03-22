@@ -19,19 +19,19 @@
       </ul>
     </div>
     <ContributionTable :data-json="dataJSON"></ContributionTable>
-    <ContributionTable :data-json="dataJSON2" :color="style"></ContributionTable>
+    <ContributionTable :data-json="dataJSONBis" :color="style"></ContributionTable>
   </div>
 </template>
 <script>
 import dataJSON from "./assets/data.json";
-import dataJSON2 from "./assets/data2.json";
+import dataJSONBis from "./assets/dataBis.json";
 import ContributionTable from "./components/ContributionTable.vue";
 export default {
   name: "App",
   data() {
     return {
       dataJSON: dataJSON,
-      dataJSON2: dataJSON2,
+      dataJSONBis: dataJSONBis,
       style: [
         { min: 0, max: 0, color: "#ebedf0" },
         { min: 1, max: 9, color: "#c6e48b" },

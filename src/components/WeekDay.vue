@@ -5,7 +5,6 @@
     </li>
   </ul>
 </template>
-
 <script>
 export default {
   props: {
@@ -24,3 +23,8 @@ export default {
   },
 };
 </script>
+<style>
+.days li:nth-child(odd) {
+  visibility: hidden;
+}
+</style>

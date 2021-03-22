@@ -1,5 +1,5 @@
 <template>
-    <ul class="squares">
+    <ul class="grid grid-flow-col grid-rows-7 grid-row grid-r">
       <li
         v-for="(day, index) in data"
         :key="index"
